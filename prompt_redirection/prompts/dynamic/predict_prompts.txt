@@ -1,0 +1,155 @@
+User: Show me the predictions of all the <categorical_feature>
+Parsed: filter <categorical_feature> true and predict [E]
+
+User: Could you show me the predictions for instance <categorical_feature> equal to <categorical_value>?
+Parsed: filter <categorical_feature> <categorical_value> and predict [E]
+
+User: Show the predictions of <categorical_feature> and <categorical_feature> with <numerical_feature> greater than or equal to <number>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and predict [E]
+
+User: Display the predictions of <categorical_feature> and <categorical_feature> with <numerical_feature> less than or equal to <number>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> less than or equal to <number> and predict [E]
+
+User: Reveal the predictions of <categorical_feature> and <categorical_feature> with <numerical_feature> greater than or equal to <number>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and predict [E]
+
+User: What are the predictions for instances with <numerical_feature> less than <number>?
+Parsed: filter <numerical_feature> less than <number> and predict [E]
+
+User: What happens to the predictions for data with <numerical_feature> of <number> where <numerical_feature> is decreased by <number>?
+Parsed: filter <numerical_feature> equal to <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: What happens to the predictions for data with <numerical_feature> of <number> where <numerical_feature> is added by <number>?
+Parsed: filter <numerical_feature> equal to <number> and change <numerical_feature> increase <number> and predict [E]
+
+User: Reveal the predictions of <categorical_feature> or <categorical_feature> with <numerical_feature> greater than or equal to <number>
+Parsed: filter <categorical_feature> true or filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and predict [E]
+
+User: Show the predictions of <categorical_feature> <categorical_value>, <categorical_feature> <categorical_value>, or <categorical_feature> <categorical_value>
+Parsed: filter <categorical_feature> <categorical_value> or filter <categorical_feature> <categorical_value> or filter <categorical_feature> <categorical_value> predict [E]
+
+User: Could you show me the predictions on all the data?
+Parsed: predict [E]
+
+User: Super cool system you got here.... could you show me the predictions across all the data?
+Parsed: predict [E]
+
+User: Could you show me predictions for instances with <number> <numerical_feature> or <number> <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> or filter <numerical_feature> equal to <number> and predict [E]
+
+User: Please tell me what the model predicts instances with <number> <numerical_feature> or <number> <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> or filter <numerical_feature> equal to <number> and predict [E]
+
+User: Please tell me what the model predicts instances with <number> <numerical_feature> or <number> <numerical_feature> or <number> <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> or filter <numerical_feature> equal to <number> or filter <numerical_feature> equal to <number> and predict [E]
+
+User: For datapoints with <number> <numerical_feature> or <number> <numerical_feature>, please tell me what the model predicts?
+Parsed: filter <numerical_feature> equal to <number> or filter <numerical_feature> equal to <number> and predict [E]
+
+User: What are the predictions for <categorical_feature> that have <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true and filter <numerical_feature> equal to <number> and predict [E]
+
+User: What are the model predictions for <categorical_feature> that have <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true and filter <numerical_feature> equal to <number> and predict [E]
+
+User: What are the predictions for data with <numerical_feature> less than <number>?
+Parsed: filter <numerical_feature> less than <number> and predict [E]
+
+User: What are the predictions for instances with <numerical_feature> greater than <number>?
+Parsed: filter <numerical_feature> greater than <number> and predict [E]
+
+User: What does the model predict for instances with <numerical_feature> greater than <number>?
+Parsed: filter <numerical_feature> greater than <number> and predict [E]
+
+User: Show predictions for <categorical_feature> where <numerical_feature> is <number> or less
+Parsed: filter <categorical_feature> true and filter <numerical_feature> less than or equal to <number> and predict [E]
+
+User: Show all predictions for <categorical_feature> where <numerical_feature> is <number> or more
+Parsed: filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and predict [E]
+
+User: Display predictions for <categorical_feature> where <numerical_feature> is <number> exactly
+Parsed: filter <categorical_feature> true and filter <numerical_feature> equal to <number> and predict [E]
+
+User: Return the model's predictions for <categorical_feature> where <numerical_feature> is not <number>
+Parsed: filter <categorical_feature> true and filter <numerical_feature> not equal to <number> and predict [E]
+
+User: What does the model predict for instances that have a <categorical_feature> or that have exactly <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true or filter <numerical_feature> equal to <number> and predict [E]
+
+User: What do you predict for <id_number>?
+Parsed: filter id 215 and predict [E]
+
+User: What is the prediction for data point number <id_number>?
+Parsed: filter id 9130 and predict [E]
+
+User: Can you please tell me the prediction for id <id_number>?
+Parsed: filter id 91 and predict [E]
+
+User: For id <id_number>, please provide the prediction.
+Parsed: filter id 776 and predict [E]
+
+User: What is the prediction for id <id_number> and why do you predict it?
+Parsed: filter id 1553 and predict and explain features [E]
+
+User: What are the reasons for predicting id <id_number> and why do you predict this instance?
+Parsed: filter id 1552 and explain features and predict [E]
+
+User: Show the predictions on all the data
+Parsed: predict [E]
+
+User: Show the predictions across all the instances
+Parsed: predict [E]
+
+User: What does the model predict on the <categorical_feature>?
+Parsed: filter <categorical_feature> true and predict [E]
+
+User: What are the predictions on the <categorical_feature>?
+Parsed: filter <categorical_feature> true and predict [E]
+
+User: Show the predictions on people older than <number>
+Parsed: filter age greater than 20 and predict [E]
+
+User: what are the predictions on people older than thirty
+Parsed: filter age greater than 30 and predict [E]
+
+User: display the predictions on people older than <number> or that have <numerical_feature> less than <number>
+Parsed: filter age greater than 20 and filter <numerical_feature> less than <number> and predict [E]
+
+User: show prediction of id <id_number>
+Parsed: filter id 120 and predict [E]
+
+User: predict <id_number>
+Parsed: filter id 320 and predict [E]
+
+User: return prediction id <id_number>
+Parsed: filter id 13423 and predict [E]
+
+User: show the prediction of id <id_number>
+Parsed: filter id 3421 and predict [E]
+
+User: please display the prediction of the instance with id <id_number>
+Parsed: filter id 34 and predict [E]
+
+User: predict <id_number>
+Parsed: filter id 22 and predict [E]
+
+User: what does the model predict on all the training data
+Parsed: predict [E]
+
+User: what does the model predict for <filter_text>?
+Parsed: <filter_parse> and predict [E]
+
+User: First, show me the predictions on data with a <numerical_feature> of <number>. Second, tell me why the model predicted them.
+Parsed: filter <numerical_feature> equal to <number> and predict and explain features [E]
+
+User: Initially, show me the data with a <numerical_feature> less than <number>. Second, tell me why the model predicted them.
+Parsed: filter <numerical_feature> less than <number> and show and explain features [E]
+
+User: could you tell me why the model predicts those instances with <numerical_feature> above <number> and that have a <numerical_feature> of <number> and also what these instances are?
+Parsed: filter <numerical_feature> greater than <number> and filter <numerical_feature> equal to <number> and explain features and show [E]
+
+User: could you show me data with a <numerical_feature> of <number> and tell me why the model predicts it?
+Parsed: filter <numerical_feature> equal to <number> and show and explain features [E]
+
+User: could you show me data with a <numerical_feature> of <number> and tell me what the model predictions are?
+Parsed: filter <numerical_feature> equal to <number> and show and predict [E]

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "7860:7860"  # Using the port defined in your Dockerfile
+    volumes:
+      - ./data:/code/data
+      - ./configs:/code/configs
+      - app-data:/code/app-data
+    environment:
+      - FLASK_ENV=development
+      - PYTHONUNBUFFERED=1
+      - PORT=7860
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  app-data:

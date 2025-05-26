@@ -1,0 +1,89 @@
+User: How would the model's predictions change if <numerical_feature> were decreased by <number> on all the training data?
+Parsed: predict and change <numerical_feature> decrease <number> and predict [E]
+
+User: How would the prediction probabilities differ for people with <numerical_feature> greater than <number> if <numerical_feature> was <number>?
+Parsed: filter <numerical_feature> greater than <number> and likelihood and change <numerical_feature> set <number> and likelihood [E]
+
+User: Would people with <number> <numerical_feature> be less <class_name> if they had <number> less <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> and likelihood and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: Would people with <number> <numerical_feature> be less <class_name> if they had <number> greater <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: Would people with a <number> of <numerical_feature> be less <class_name> if <numerical_feature> were decreased by <number>?
+Parsed: filter <numerical_feature> equal to <number> and likelihood and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: Would people with <number> <numerical_feature> be more <class_name> if they had <number> greater <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: Would people with more than <number> <numerical_feature> be more likely to be predicted <class_name> if they had <number> greater <numerical_feature>?
+Parsed: filter <numerical_feature> equal to <number> and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: For people with <number> <numerical_feature>, if <numerical_feature> were to decrease by <number>, in which ways would the predictions change?
+Parsed: filter <numerical_feature> equal to <number> and predict and change <numerical_feature> decrease <number> and predict [E]
+
+User: For people with <number> less than <numerical_feature>, if <numerical_feature> were increased by <number>, in which ways would the predictions change?
+Parsed: filter <numerical_feature> less than <number> and predict and change <numerical_feature> increase <number> and predict [E]
+
+User: How would the predictions change on the data if <numerical_feature> is reduced by <number>?
+Parsed: predict and change <numerical_feature> decreased <number> and predict [E]
+
+User: show me the data of people with <numerical_feature> greater than <number>. show me the predictions on this data
+Parsed: filter <numerical_feature> greater than <number> and show and predict [E]
+
+User: data of <numerical_feature> less than <number>. then predictions
+Parsed: filter <numerical_feature> less than <number> and show and predict [E]
+
+User: prediction of data where <numerical_feature> greater than <number> followed by showing the data itself
+Parsed: filter <numerical_feature> less than <number> and predict and show [E]
+
+User: (1) Why did the model predict and (2) how would you change the prediction of id 35?
+Parsed: filter id 35 and explain features and explain cfe [E]
+
+User: Why was data 52 predicted and how could you change this?
+Parsed: filter id 52 and explain features and explain cfe [E]
+
+User: Is <numerical_feature> more important than <numerical_feature>?
+Parsed: important <numerical_feature> and important <numerical_feature> [E]
+
+User: Is <numerical_feature> less important than <numerical_feature>?
+Parsed: important <numerical_feature> and important <numerical_feature> [E]
+
+User: What are the predictions for those with a <numerical_feature> of <number>?
+Parsed: filter <numerical_feature> equal to <number> and predict [E]
+
+User: for those with a <numerical_feature> of <number> would the predictions change if <numerical_feature> is decreased by <number>?
+Parsed: filter <numerical_feature> equal to <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: for people with a <numerical_feature> of <number> would the predictions change if <numerical_feature> is increased by <number>?
+Parsed: filter <numerical_feature> equal to <number> and change <numerical_feature> increased <number> and predict [E]
+
+User: if <numerical_feature> were increased by <number>, tell me about the importance of <numerical_feature> and <number>
+Parsed: change <numerical_feature> increase <number> and important <numerical_feature> and important <number> [E]
+
+User: if <numerical_feature> were decrease by <number>, tell me about the importance of <numerical_feature> and <number>
+Parsed: change <numerical_feature> decrease <number> and important <numerical_feature> and important <number> [E]
+
+User: how would the importances compare if <numerical_feature> is <number> of <numerical_feature> and <numerical_feature>?
+Parsed: change <numerical_feature> set <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: For people with a <numerical_feature> over <number> is <numerical_feature> less important than <numerical_feature>?
+Parsed: filter <numerical_feature> greater than <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: If we were to increase <numerical_feature> by <number>, how would the feature importances for <numerical_feature> and <number> compare?
+Parsed: change <numerical_feature> increase <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: For people with a <numerical_feature> over <number> is <numerical_feature> less important than <numerical_feature>
+Parsed: filter <numerical_feature> greater than <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: For individuals with a <numerical_feature> less than <number> is <numerical_feature> less important than <numerical_feature>
+Parsed: filter <numerical_feature> less than <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: If we were to increase <numerical_feature> by <number>, how would the importance of <numerical_feature> and <numerical_feature> compare?
+Parsed: change <numerical_feature> increase <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: If <numerical_feature> were set to <number> and <numerical_feature> were increased by <number>, would <numerical_feature> be less important than <numerical_feature>?
+Parsed: change <numerical_feature> set <number> and change <numerical_feature> increase <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: Let's say that <numerical_feature> were <number> greater. How would the feature importances for <numerical_feature> and <numerical_feature> compare?
+Parsed: change <numerical_feature> increase <number> and important <numerical_feature> and important <numerical_feature> [E]

@@ -1,0 +1,284 @@
+User: Explain the predictions of all the <categorical_feature>
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: What are the feature importances for instances with <numerical_feature> is greater than <number>?
+Parsed: filter <numerical_feature> greater than <number> and explain features [E]
+
+User: Explain predictions of the <categorical_feature>
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: Run explanations on the <categorical_feature>
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: Why does the model predict those who do not have <categorical_feature>?
+Parsed: filter <categorical_feature> false and explain features [E]
+
+User: Explain those with <numerical_feature> not less than <number> as true?
+Parsed: filter <numerical_feature> greater equal than <number> and explain features [E]
+
+User: Why do you predict instance <id_number>?
+Parsed: filter id 2451 and explain features [E]
+
+User: For <id_number>, why do you predict it?
+Parsed: filter id 3315 and explain features [E]
+
+User: What are the reasons the model predicts <categorical_feature>?
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: Please run <explanation_name> explanations on all the <categorical_feature>
+Parsed: filter <categorical_feature> true and explain <explanation_name> [E]
+
+User: For <categorical_feature> who have more than <numerical_feature> greater than <number>, run the <explanation_name> explanations
+Parsed: filter <categorical_feature> true and filter <numerical_feature> greater than <number> and explain <explanation_name> [E]
+
+User: Why does my model predict those with <numerical_feature> less than <number> as true?
+Parsed: filter <numerical_feature> less than <number> and explain features [E]
+
+User: Why does my model predict those with <numerical_feature> not equal to <number> as true?
+Parsed: filter <numerical_feature> not equal to <number> and explain features [E]
+
+User: I'm trying to figure out why <categorical_feature> with value <categorical_value> are predicted. Think you could help me out?
+Parsed: filter <categorical_feature> <categorical_value> and explain features [E]
+
+User: If <categorical_feature> is <categorical_value> and is not a <categorical_feature>, run the explanation
+Parsed: filter <categorical_feature> <categorical_value> and filter <categorical_feature> false and explain features [E]
+
+User: If <categorical_feature> is <categorical_value> and is not a <categorical_feature>, explain
+Parsed: filter <categorical_feature> <categorical_value> and filter <categorical_feature> false and explain features [E]
+
+User: Explain <categorical_feature> is <categorical_value> and is not a <categorical_feature>, explain
+Parsed: filter <categorical_feature> <categorical_value> and filter <categorical_feature> false and explain features [E]
+
+User: Explain the predictions of <categorical_feature> and <categorical_feature> with <numerical_feature> greater than or equal to <number>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and explain features [E]
+
+User: Explain <categorical_feature> and <categorical_feature> with <numerical_feature> greater than or equal to <number>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and explain features [E]
+
+User: What are some of the reasons the model predicts instances with <categorical_feature> equal to <categorical_value>?
+Parsed: filter <categorical_feature> <categorical_value> and explain features [E]
+
+User: Could you explain instance <categorical_feature> equal to <categorical_value>?
+Parsed: filter <categorical_feature> <categorical_value> and explain features [E]
+
+User: Why does my model predict those with <numerical_feature> not less than <number> as true?
+Parsed: filter <numerical_feature> greater equal than <number> and explain features [E]
+
+User: Why does <categorical_feature> equal to <categorical_value> get predicted by the model?
+Parsed: filter <categorical_feature> <categorical_value> and explain features [E]
+
+User: What are the rationale's for the model's prediction of data sample <id_number> and how could one change the prediction?
+Parsed: filter id 72324 and explain features and explain cfe [E]
+
+User: For the data point with id <id_number>, how could we change the prediction, what is the model's rationale, and what does it predict?
+Parsed: filter id 92 and explain cfe and explain features and predict [E]
+
+User: for data point number <id_number>, how did the model arrive at the prediction decision and what could I do to change this predictions?
+Parsed: filter id 32 and explain features and explain cfe [E]
+
+User: How did you decide what to predict for id <id_number> and what could someone do to change this prediction?
+Parsed: filter id 78 and explain features and explain cfe [E]
+
+User: Explain the reasoning and how to flip the predictions for data point id <id_number>
+Parsed: filter id 98 and explain features and explain cfe [E]
+
+User: Why does the model predict data <id_number>? What does it predict for this instance?
+Parsed: filter id 24 and explain features and predict? [E]
+
+User: What does my model predict for data <id_number>? Next, once you've completed this, could you tell me why the model predicts it (i.e., what's it rationale)?
+Parsed: filter id 33 and predict and explain features [E]
+
+User: Explain my model's prediction for data <id_number> and then follow up with the rationale for the prediction!
+Parsed: filter id 21 and predict and explain features [E]
+
+User: Explain my model's rationale for predict data number <id_number> and how to flip this prediction
+Parsed: filter id 31 and explain features and explain cfe [E]
+
+User: For instance <categorical_feature> equal to <categorical_value> run explanations please!
+Parsed: filter <categorical_feature> <categorical_value> and explain features [E]
+
+User: Why does my model predict those with <numerical_feature> equal to <number> or greater as true?
+Parsed: filter <numerical_feature> greater equal than <number> and explain features [E]
+
+User: What are the reasons for predicting <categorical_feature> that have <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true and filter <numerical_feature> equal to <number> and explain features [E]
+
+User: Why does the model predict instances that have a <categorical_feature> or that have more than <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true or filter <numerical_feature> greater than <number> and explain features [E]
+
+User: Why does the model predict instances that have more than <number> <numerical_feature> or are <categorical_feature>?
+Parsed: filter <numerical_feature> greater than <number> or filter <categorical_feature> true and explain features [E]
+
+User: Why does the model predict instances that have a <categorical_feature> or that have exactly <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true or filter <numerical_feature> equal to <number> and explain features [E]
+
+User: Explain instances that have a <categorical_feature> or that have exactly <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true or filter <numerical_feature> equal to <number> and explain features [E]
+
+User: Why does the model predict instances that have a <categorical_feature> or that do not have <number> <numerical_feature>?
+Parsed: filter <categorical_feature> true or filter <numerical_feature> not equal to <number> and explain features [E]
+
+User: What are the explanations for people older than <number>?
+Parsed: filter age greater than 25 and explain features [E]
+
+User: Run the explanainer for people younger than <number>
+Parsed: filter age less than 30 and explain features [E]
+
+User: Why does the model predict people older than <number> and where <numerical_feature> is set to <number>
+Parsed: filter age greater than 20 and <numerical_feature> equal to <number> [E]
+
+User: Explain the predictions on people older than <number>
+Parsed: filter age greater than 20 and explain features [E]
+
+User: Explain the predictions on people older than thirty
+Parsed: filter age greater than 30 and explain features [E]
+
+User: Explain the predictions on people older than <number> or that have <numerical_feature> less than <number>
+Parsed: filter age greater than 20 and filter <numerical_feature> less than <number> and explain features [E]
+
+User: explain the model's predictions on the data
+Parsed: explain features [E]
+
+User: show me the model's rationale for making predictions on all the data
+Parsed: explain features [E]
+
+User: explain the model's predictions on people with a <numerical_feature> over <number>
+Parsed: filter <numerical_feature> greater than <number> and explain features [E]
+
+User: why do you predict instance id <id_number>
+Parsed: filter id 31 and explain features [E]
+
+User: why do you predict instance sample id <id_number>
+Parsed: filter id 987 and explain features [E]
+
+User: explain id <id_number>
+Parsed: filter id 15 and explain features [E]
+
+User: why is id <id_number> predicted <class_name>
+Parsed: filter id 560 and explain features [E]
+
+User: why are those with <number> <numerical_feature> predicted <class_name>
+Parsed: filter <numerical_feature> equal to <number> and explain features [E]
+
+User: why does the model predict id <id_number>
+Parsed: filter id 120 and explain features [E]
+
+User: why does the model predict id <id_number>
+Parsed: filter id 32 and explain features [E]
+
+User: why are those with <numerical_feature> greater than <number> but not greater than <number> predicted <class_name>
+Parsed: filter <numerical_feature> greater than <number> and filter <numerical_feature> less than <number> and explain features [E]
+
+User: how do you decide whether someone is <class_name>
+Parsed: explain features [E]
+
+User: How do you figure out if data points are <class_name>
+Parsed: explain features [E]
+
+User: How do you figure out if individuals <class_name>
+Parsed: explain features [E]
+
+User: How do you figure out if cars are <class_name>
+Parsed: explain features [E]
+
+User: for people with <numerical_feature> greater that <number>, how did the model come to the conclusion on their predictions?
+Parsed: filter <numerical_feature> greater than <number> and explain features [E]
+
+User: for data where <numerical_feature> is less than <number>, what is the reasoning process of the model?
+Parsed: filter <numerical_feature> less than <number> and explain features [E]
+
+User: in what ways do you determine if data will be predicted <class_name>?
+Parsed: explain features [E]
+
+User: in what ways do you determine if data will be predicted <class_name> for <categorical_feature>?
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: what is the reasoning for figuring out if <categorical_feature> or <categorical_feature> are to be predicted <class_name>?
+Parsed: filter <categorical_feature> true or filter <categorical_feature> true and explain features [E]
+
+User: what is the motivation for figuring out if <categorical_feature> are to be predicted <class_name>?
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: what aspects of the data make you more confident in your predictions?
+Parsed: explain features [E]
+
+User: how do you make decisions on those that have <numerical_feature> more than <number>?
+Parsed: filter <numerical_feature> greater than <number> and explain features [E]
+
+User: what methods do you use to come to predict <class_name>?
+Parsed: explain features [E]
+
+User: what methods do you use to come to predict <class_name> for those that are <categorical_feature>?
+Parsed: filter <categorical_feature> true and explain features [E]
+
+User: what are the rationales and reasoning strategies you leverage?
+Parsed: explain features [E]
+
+User: for those with <numerical_feature> of <number> and <categorical_feature>, how do you use the data to inform outcomes?
+Parsed: filter <numerical_feature> equal to <number> and filter <categorical_feature> true and explain features [E]
+
+User: what informs your understanding that, for those with <numerical_feature> above <number>, they will be <class_name>?
+Parsed: filter <numerical_feature> greater than <number> and explain features [E]
+
+User: describe your motivating factors for deciding <class_name> for both <categorical_feature> and <categorical_feature>
+Parsed: filter <categorical_feature> true or filter <categorical_feature> true and explain features [E]
+
+User: could you let me know why you predicted <filter_text>?
+Parsed: <filter_parse> and explain features [E]
+
+User: i want to better understand your reasoning on data with <filter_text>
+Parsed: <filter_parse> and explain features [E]
+
+User: could you inform me how you reasoned about people in the data where <filter_text>
+Parsed: <filter_parse> and explain features [E]
+
+User: for <filter_text>, please help me understand your reasoning process
+Parsed: <filter_parse> and explain features [E]
+
+User: what's your motivation for deciding the predictions of <filter_text>
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of factors do you leverage on <filter_text> to figure out if these people are <class_name>?
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of reasoning do you use to determine if <filter_text> are <class_name>?
+Parsed: <filter_parse> and explain features [E]
+
+User: what aspects of the data do you consider when reasoning about <filter_text> to make decisions?
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of factors do you take into consideration when determining if <filter_text> are <class_name>?
+Parsed: <filter_parse> and explain features [E]
+
+User: how do you decide whether <filter_text> will be <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: can you provide me with reasoning for the model's predictions on <filter_text>?
+Parsed: <filter_parse> and explain features [E]
+
+User: how do you figure out if someone who is a <filter_text> will be <class_name>?
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of factors do you leverage on <filter_text> to figure out if these people are <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of reasoning do you use to determine if <filter_text> are <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: what aspects of the data do you consider when reasoning about <filter_text> to make decisions
+Parsed: <filter_parse> and explain features [E]
+
+User: what set of factors do you take into consideration when determining if <filter_text> are <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: how do you decide whether <filter_text> will be <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: how do you figure out if someone who is a <filter_text> will be <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: in cases where <filter_text>, how do you determine if <class_name>
+Parsed: <filter_parse> and explain features [E]
+
+User: in those situations where <filter_text>, what are the strategies you use to figure out if the correct prediction is <class_name>
+Parsed: <filter_parse> and explain features [E]

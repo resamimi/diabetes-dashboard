@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diabetes-risk-dashboard"  # More descriptive name
+version = "0.1.0"
+description = "Diabetes Risk Assessment Dashboard"
+requires-python = ">=3.8"
+
+# Instead of listing all dependencies here, which can be tricky,
+# I suggest using a requirements.txt and referencing it
+
+[project.optional-dependencies]
+# Core dependencies
+core = [
+    "flask>=2.0.3",
+    "numpy>=1.21.6",
+    "pandas>=1.4.1",
+    "scikit-learn>=1.0.2",
+    "gunicorn>=20.1.0"
+]
+
+# Optional dependencies for additional features
+dev = [
+    "pytest>=7.1.1",
+    "wandb>=0.13.2"
+]

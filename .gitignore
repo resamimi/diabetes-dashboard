@@ -1,0 +1,4 @@
+# Remove or comment out any lines that might exclude your data files
+# !data/diabetes_model_grad_tree.pkl
+# !data/diabetes_test.csv__pycache__/
+*.pyc

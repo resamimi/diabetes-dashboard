@@ -1,0 +1,185 @@
+User: describe data
+Parsed: data [E]
+
+User: more info about the data and model
+Parsed: data and model [E]
+
+User: Tell me a bit more about the data please.
+Parsed: data [E]
+
+User: Give an overview of the data.
+Parsed: data [E]
+
+User: What does the data look like?
+Parsed: data [E]
+
+User: Could you describe the data a bit more?
+Parsed: data [E]
+
+User: What are the features in the data?
+Parsed: data [E]
+
+User: what are the features
+Parsed: data [E]
+
+User: show me the features
+Parsed: data [E]
+
+User: Could you describe the data and model?
+Parsed: data and model [E]
+
+User: What's the data like and what can you do?
+Parsed: data and function [E]
+
+User: tell me what the model is
+Parsed: model [E]
+
+User: tell me what the model and data are
+Parsed: model and data [E]
+
+User: describe the model and data
+Parsed: model and data [E]
+
+User: what is the distribution of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the distribution of <categorical_feature>
+Parsed: statistic <categorical_feature> [E]
+
+User: what is the <numerical_feature> feature like
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the <categorical_feature> feature like
+Parsed: statistic <categorical_feature> [E]
+
+User: what are the statistics of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the variability of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: describe the variability of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the range of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the max value of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the minimum value of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is the mean of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what is 1 std of <numerical_feature>?
+Parsed: statistic <numerical_feature> [E]
+
+User: what is 1 standard deviation of <numerical_feature>
+Parsed: statistic <numerical_feature> [E]
+
+User: what are the statistics of <numerical_feature> like?
+Parsed: statistic <numerical_feature> [E]
+
+User: for <filter_text>, what is the distribution of <numerical_feature>?
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: for <filter_text>, what is the distribution of <categorical_feature>?
+Parsed: <filter_parse> and statistic <categorical_feature> [E]
+
+User: where <filter_text>, show the distribution of <categorical_feature>?
+Parsed: <filter_parse> and statistic <categorical_feature> [E]
+
+User: what is 1 standard deviation of the label
+Parsed: statistic target [E]
+
+User: what are the statistics of the labels like?
+Parsed: statistic target [E]
+
+User: what's the <numerical_feature> of id <id_number>?
+Parsed: filter id 78 and statistic <numerical_feature> [E]
+
+User: what's the <categorical_feature> of id <id_number>
+Parsed: filter id 22 and statistic <numerical_feature> [E]
+
+User: what's the value of <categorical_feature> of id <id_number>
+Parsed: filter id 25 and statistic <categorical_feature> [E]
+
+User: what's the value of <numerical_feature> of id <id_number>
+Parsed: filter id 25 and statistic <numerical_feature> [E]
+
+User: what are is the distribution of the target variable?
+Parsed: statistic target [E]
+
+User: for <filter_text>, what is the distribution of the labels?
+Parsed: <filter_parse> and statistic target [E]
+
+User: for <filter_text>, what is the distribution of the target variable?
+Parsed: <filter_parse> and statistic target [E]
+
+User: for <filter_text>, what is the distribution of the label?
+Parsed: <filter_parse> and statistic target [E]
+
+User: where <filter_text>, show the distribution of the ground truth values?
+Parsed: <filter_parse> and statistic target [E]
+
+User: for data where <filter_text>, what is the statistics of <numerical_feature>?
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: for data where <filter_text>, what is the statistics of <categorical_feature>?
+Parsed: <filter_parse> and statistic <categorical_feature> [E]
+
+User: for data where <filter_text>, what is the average values of <numerical_feature>?
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: for instances <filter_text>, show statistics for the <numerical_feature> feature
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: what's the average <numerical_feature> for people where <filter_text>?
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: what's the statistics of <numerical_feature> for data where <filter_text>?
+Parsed: <filter_parse> and statistic <numerical_feature> [E]
+
+User: what are the label frequencies
+Parsed: statistic target [E]
+
+User: what are the class frequencies
+Parsed: statistic target [E]
+
+User: what are the gold label frequencies
+Parsed: statistic target [E]
+
+User: what are the gold target frequencies
+Parsed: statistic target [E]
+
+User: describe the <numerical_feature> feature
+Parsed: define <numerical_feature> [E]
+
+User: define the <numerical_feature> feature
+Parsed: define <numerical_feature> [E]
+
+User: describe the <numerical_feature> feature
+Parsed: define <numerical_feature> [E]
+
+User: define the <categorical_feature> feature
+Parsed: define <categorical_feature> [E]
+
+User: what's the definition of <numerical_feature>?
+Parsed: define <numerical_feature> [E]
+
+User: what's the meaning of the <numerical_feature> feature?
+Parsed: define <numerical_feature> [E]
+
+User: could you tell me what <numerical_feature> means?
+Parsed: define <numerical_feature> [E]
+
+User: could you tell me what <categorical_feature> means?
+Parsed: define <categorical_feature> [E]
+
+User: how do you define the feature named <numerical_feature>?
+Parsed: define <numerical_feature> [E]
+
+User: how do you define the feature named <categorical_feature>?
+Parsed: define <categorical_feature> [E]

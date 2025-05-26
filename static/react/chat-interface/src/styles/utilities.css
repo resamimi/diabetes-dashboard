@@ -1,0 +1,219 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes highlight {
+    0% { background-color: #fff7e6; }
+    100% { background-color: transparent; }
+  }
+  
+  .highlight-message {
+    animation: highlight 2s ease;
+  }
+  
+  .message:last-child {
+    animation: fadeIn 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .chat-container {
+      flex-direction: column;
+      width: calc(100% - 2rem);
+    }
+  
+    .chat-main {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .favorite-messages {
+      margin-left: 0;
+      max-height: 300px;
+      max-width: 100%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      left: -100%;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  
+    .chat-header {
+      padding: 1rem;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .chat-header h1 {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Plotly graph styling */
+.plotly-graph {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 1rem 0;
+  }
+  
+  /* Additional mobile styles */
+  @media (max-width: 768px) {
+    .suggested-prompt {
+      bottom: 80px;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .guide-button {
+      background-color: #e6f0ff !important;
+      border: 1px solid #667eea !important;
+      color: #667eea !important;
+      font-weight: 500 !important;
+      margin-top: 0.5rem !important;
+      transition: all 0.2s ease !important;
+    }
+    
+    .guide-button:hover {
+      background-color: #667eea !important;
+      color: white !important;
+      transform: translateX(5px);
+    }
+  }
+
+  .message {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .message.fade-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .message.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Additional hover interactions */
+  .favorite-message:active {
+    transform: translateX(3px);
+  }
+  
+  .message-actions button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Additional Accessibility Styles */
+  @media (prefers-reduced-motion: reduce) {
+    .message,
+    .sidebar,
+    .favorite-message,
+    .message-actions button,
+    .chat-input button,
+    .sample-questions button,
+    .guide-button {
+      transition: none;
+    }
+  }
+  
+  /* High Contrast Mode Support */
+  @media (forced-colors: active) {
+    .message-content,
+    .chat-input input,
+    .favorite-message,
+    .modal-content {
+      border: 1px solid currentColor;
+    }
+  }
+
+  .highlight-feature {
+    position: relative;
+    background-color: rgba(255, 255, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Style for highlighted headers */
+  h1.highlight-feature,
+  h2.highlight-feature,
+  h3.highlight-feature,
+  h4.highlight-feature {
+    background-color: rgba(255, 255, 0, 0.3);
+    border-left: 4px solid #fbbf24;
+    padding-left: 1rem;
+    margin-left: -1rem;
+  }
+  
+  /* Add a subtle left border to highlighted content */
+  p.highlight-feature,
+  div.highlight-feature {
+    border-left: 4px solid rgba(251, 191, 36, 0.3);
+    padding-left: 1rem;
+    margin-left: -1rem;
+  }
+  
+  /* Smooth transition for highlight effects */
+  .highlight-feature {
+    animation: highlight-pulse 2s ease-in-out;
+  }
+  
+  @keyframes highlight-pulse {
+    0% { background-color: rgba(255, 255, 0, 0.4); }
+    50% { background-color: rgba(255, 255, 0, 0.2); }
+    100% { background-color: rgba(255, 255, 0, 0.3); }
+  }

@@ -1,0 +1,107 @@
+<numerical_feature> more than <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+<numerical_feature> less than <numerical_value>
+filter <numerical_feature> less than <numerical_value>
+
+<categorical_feature>
+filter <categorical_feature> true
+
+not <categorical_feature>
+filter <categorical_feature> false
+
+<numerical_feature> above <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+<numerical_feature> the same or more than <numerical_value>
+filter <numerical_feature> greater equal than <numerical_value>
+
+<numerical_feature> equal to or below <numerical_value>
+filter <numerical_feature> less equal than <numerical_value>
+
+<numerical_feature> of <numerical_value>
+filter <numerical_feature> equal to <numerical_value>
+
+<numerical_feature> not equal to <numerical_value>
+filter <numerical_feature> not equal to <numerical_value>
+
+<categorical_feature> where <numerical_feature> is of <numerical_value>
+filter <categorical_feature> true and filter <numerical_feature> equal to <numerical_value>
+
+<numerical_feature> is not greater than <numerical_value>
+filter <numerical_feature> less equal than <numerical_value>
+
+<numerical_feature> is equal to but not greater than <numerical_value>
+filter <numerical_feature> less equal than <numerical_value>
+
+<numerical_feature> is not less than <numerical_value>
+filter <numerical_feature> greater equal than <numerical_value>
+
+<categorical_feature>, <categorical_feature>, <categorical_feature> are all true, but <categorical_feature> is not true
+filter <categorical_feature> true and filter <categorical_feature> true and filter <categorical_feature> true and filter <categorical_feature> false
+
+<numerical_feature> is beyond <numerical_value> but <numerical_feature> is less than <numerical_value> and not <categorical_feature>
+filter <numerical_feature> greater than <numerical_value> and filter <numerical_feature> less than <numerical_value> and <categorical_feature> false
+
+everything but not <numerical_feature> of <numerical_value>
+filter <numerical_feature> not equal to <numerical_value>
+
+<numerical_feature> upper than <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+<numerical_feature> older than <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+<numerical_feature> younger than <numerical_value>
+filter <numerical_feature> less than <numerical_value>
+
+<numerical_feature> exceeds <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+<numerical_feature> taller than <numerical_value>
+filter <numerical_feature> greater than <numerical_value>
+
+a <categorical_feature>
+filter <categorical_feature> true
+
+<numerical_feature> older than <numerical_value> and <numerical_feature> younger than <numerical_value>
+filter <numerical_feature> greater than <numerical_value> and filter <numerical_feature> less than <numerical_value>
+
+id 61
+filter id 61
+
+id 78
+filter id 78
+
+data points 89 and 90
+filter id 89 and filter id 90
+
+the model predicts <class_name>
+predictionfilter <non_semantic_class_names>
+
+the model's prediction is <class_name>
+predictionfilter <non_semantic_class_names>
+
+<class_name> is what the individuals outcome under the model is
+predictionfilter <non_semantic_class_names>
+
+the model predicts <class_name> and the label is <class_name>
+predictionfilter <non_semantic_class_names> and labelfilter <class_name>
+
+the model predicts <class_name> but the label is <class_name>
+predictionfilter <non_semantic_class_names> and labelfilter <non_semantic_class_names>
+
+the model outcome is <class_name> but the label is <class_name>
+predictionfilter <non_semantic_class_names> and labelfilter <non_semantic_class_names>
+
+the model predicts <class_name> but actually are <class_name>
+predictionfilter <non_semantic_class_names> and labelfilter <non_semantic_class_names>
+
+the model predicts <class_name> but whose ground truth label is <class_name>
+predictionfilter <non_semantic_class_names> and labelfilter <non_semantic_class_names>
+
+where they are actually <class_name> but the model predicts <class_name>
+labelfilter <non_semantic_class_names> and predictionfilter <non_semantic_class_names>
+
+who are <class_name> but get predicted as <class_name>
+labelfilter <non_semantic_class_names> and predictionfilter <non_semantic_class_names>

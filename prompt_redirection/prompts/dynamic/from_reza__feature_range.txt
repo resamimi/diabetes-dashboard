@@ -1,0 +1,17 @@
+User: what are the feature ranges that contribute to the predictions the most?
+
+User: what are the most important feature ranges?
+
+User: what are the most important feature ranges?
+
+User: Which ranges of input variables have the strongest influence on diabetes predictions?
+
+User: Can you identify the key value ranges across features that drive the model's decisions?
+
+User: What feature value thresholds appear most critical for predicting diabetes risk?
+
+User: Which combinations of feature ranges are most predictive of diabetes outcomes?
+
+User: Show me the most significant value ranges for each important predictor in the model.
+
+User: What feature intervals tend to push predictions toward positive diabetes cases?

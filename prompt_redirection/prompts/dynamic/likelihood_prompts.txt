@@ -1,0 +1,83 @@
+User: How likely is it that <categorical_feature> are predicted as <class_name>?
+Parsed: filter <categorical_feature> true and likelihood [E]
+
+User: Could you tell me how likely it is that <categorical_feature> equal to <categorical_value> are predicted as <class_name>?
+Parsed: filter <categorical_feature> <categorical_value> and likelihood [E]
+
+User: Show the likelihood that <categorical_feature> and <categorical_feature> with <numerical_feature> greater than or equal to <number> are predicted as <class_name>
+Parsed: filter <categorical_feature> true and filter <categorical_feature> true and filter <numerical_feature> greater equal than <number> and likelihood [E]
+
+User: How likely are instances with <numerical_feature> less than <number> predicted as <class_name>?
+Parsed: filter <numerical_feature> less than <number> and likelihood [E]
+
+User: How likely are <categorical_feature> predicted as <class_name>?
+Parsed: filter <categorical_feature> true and likelihood [E]
+
+User: Please tell me how likely it is that instances that are not <categorical_feature> get the prediction <class_name>?
+Parsed: filter <categorical_feature> false and likelihood [E]
+
+User: What is the probability that id <id_number> is predicted as <class_name> by the model?
+Parsed: filter id 2215 and likelihood [E]
+
+User: What is the likelihood that id <id_number> is predicted as <class_name> by the model?
+Parsed: filter id 15 and likelihood [E]
+
+User: How likely is it that <numerical_feature> less than <number> and <numerical_feature> equal to <number> but not <categorical_feature> is predicted as <class_name> by the model?
+Parsed: filter <numerical_feature> less than <number> and filter <numerical_feature> equal to <number> and filter <categorical_feature> false and likelihood [E]
+
+User: What's the likelihood of <class_name>?
+Parsed: likelihood [E]
+
+User: For those with <numerical_feature> over <number>, what are the likelihoods of <class_name>?
+Parsed: filter <numerical_feature> greater than <number> and likelihood [E]
+
+User: What's the probability of <class_name>?
+Parsed: likelihood [E]
+
+User: Could you tell me how likely <categorical_feature> equal to <categorical_value> are to be predicted as <class_name>?
+Parsed: filter <categorical_feature> <categorical_value> and likelihood [E]
+
+User: What is the probability of id <id_number> being predicted <class_name>?
+Parsed: filter id 10 and likelihood [E]
+
+User: probability of id <id_number> predicted <class_name>?
+Parsed: filter id 532 and likelihood [E]
+
+User: how likely is it id <id_number> is <class_name>?
+Parsed: filter id 155 and likelihood [E]
+
+User: what is the chance that the data point with id <id_number> is <class_name>
+Parsed: filter id 2149 and likelihood [E]
+
+User: show the probability that id <id_number> is <class_name>
+Parsed: filter id 515 and likelihood [E]
+
+User: probability data point <id_number> is predicted by the model <class_name>
+Parsed: filter id 22 and likelihood [E]
+
+User: I want you to tell me the probability of the instance with id <id_number> being predicted in the "<class_name>" class by the model
+Parsed: filter id 100 and likelihood [E]
+
+User: return the probability that instance <id_number> is predicted in the <class_name> class
+Parsed: filter id 233 and likelihood [E]
+
+User: what's the chance instance id <id_number> is scored as <class_name>
+Parsed: filter id 324 and likelihood [E]
+
+User: probability that id <id_number> is predicted as "<class_name>" from the model
+Parsed: filter id 44 and likelihood [E]
+
+User: for people with a <numerical_feature> over <number> or <numerical_feature> over <number>, how likely are they to be <class_name>?
+Parsed: filter <numerical_feature> greater than <number> or filter <numerical_feature> greater than <number> and likelihood [E]
+
+User: how likely are people with <numerical_feature> over <number> and at least <number> <numerical_feature> to be <class_name>
+Parsed: filter <numerical_feature> greater than <number> and filter <numerical_feature> greater equal than <number> and likelihood [E]
+
+User: how likely are people with <numerical_feature> below <number> and at least <number> <numerical_feature> to be <class_name>
+Parsed: filter <numerical_feature> less than <number> and filter <numerical_feature> greater equal than <number> and likelihood [E]
+
+User: show me the prediction probabilities for <filter_text>
+Parsed: <filter_parse> and likelihood [E]
+
+User: what are the class probabilities on your predictions for <filter_text>?
+Parsed: <filter_parse> and likelihood [E]

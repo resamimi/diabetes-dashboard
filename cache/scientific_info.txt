@@ -1,0 +1,378 @@
+```json
+{
+  "primary_factors": {
+    "Glucose": {
+      "importance_analysis": {
+        "analysis": "Glucose is a primary factor in diabetes diagnosis and management.  Sustained hyperglycemia is the defining characteristic of diabetes and directly contributes to the development of long-term complications.",
+        "citations": {
+          "Hyperglycemia is a defining characteristic of diabetes": {
+            "citation": "[1]",
+            "verification": {
+              "type": "direct_quote",
+              "evidence": "Diabetes mellitus is a heterogeneous metabolic disorder characterized by chronic hyperglycemia resulting from defects in insulin secretion, insulin action, or both."
+            }
+          },
+          "Sustained hyperglycemia contributes to long-term complications": {
+            "citation": "[2]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "The UKPDS demonstrated conclusively that improved glycemic control leads to a reduction in microvascular complications."
+            }
+          }
+        }
+      },
+      "typical_ranges": {
+        "values": {
+          "min": "70",
+          "max": "99",
+          "unit": "mg/dL"
+        },
+        "citations": {
+          "Normal fasting glucose levels are between 70 and 99 mg/dL": {
+            "citation": "[1]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "A normal fasting plasma glucose level is <100 mg/dL (5.6 mmol/L)."
+            }
+          }
+        }
+      },
+      "diagnostic_thresholds": {
+        "values": {
+          "prediabetes": "100-125",
+          "diabetes": "126",
+          "unit": "mg/dL"
+        },
+        "citations": {
+          "Prediabetes is diagnosed with fasting glucose levels between 100 and 125 mg/dL": {
+            "citation": "[1]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Prediabetes is diagnosed with a fasting plasma glucose level between 100 and 125 mg/dL."
+            }
+          },
+          "Diabetes is diagnosed with a fasting glucose level of 126 mg/dL or higher": {
+            "citation": "[1]",
+            "verification": {
+              "type": "direct_quote",
+              "evidence": "The criteria for the diagnosis of diabetes are... fasting plasma glucose (FPG) ≥126 mg/dL (7.0 mmol/L)."
+            }
+          }
+        }
+      }
+    },
+    "BMI": {
+      "importance_analysis": {
+        "analysis": "BMI is a primary factor because it is strongly associated with insulin resistance and type 2 diabetes risk.  Higher BMI contributes to metabolic dysfunction, making it a crucial factor in diabetes development and management.",
+        "citations": {
+          "BMI is strongly associated with insulin resistance and type 2 diabetes risk": {
+            "citation": "[3]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "The study found a strong positive correlation between BMI and insulin resistance, indicating that higher BMI increases the risk of developing type 2 diabetes."
+            }
+          },
+          "Higher BMI contributes to metabolic dysfunction": {
+            "citation": "[4]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Obesity, as measured by BMI, is a major driver of metabolic dysfunction, including insulin resistance, dyslipidemia, and hypertension, all of which contribute to the development of type 2 diabetes."
+            }
+          }
+        }
+      },
+      "typical_ranges": {
+        "values": {
+          "min": "18.5",
+          "max": "24.9",
+          "unit": "kg/m^2"
+        },
+        "citations": {
+          "A healthy BMI range is 18.5 to 24.9 kg/m^2": {
+            "citation": "[5]",
+            "verification": {
+              "type": "direct_quote",
+              "evidence": "A BMI of 18.5-24.9 kg/m2 is considered healthy."
+            }
+          }
+        }
+      },
+      "diagnostic_thresholds": {
+        "values": {
+          "overweight": "25-29.9",
+          "obese": "30",
+          "unit": "kg/m^2"
+        },
+        "citations": {
+          "Overweight is defined as a BMI of 25-29.9 kg/m^2": {
+            "citation": "[5]",
+            "verification": {
+              "type": "direct_quote",
+              "evidence": "Overweight is defined as a BMI of 25.0 to <30."
+            }
+          },
+          "Obesity is defined as a BMI of 30 kg/m^2 or higher": {
+            "citation": "[5]",
+            "verification": {
+              "type": "direct_quote",
+              "evidence": "Obesity is defined as a BMI of 30.0 or higher."
+            }
+          }
+        }
+      }
+    }
+  },
+  "secondary_factors": {
+    "DiabetesPedigreeFunction": {
+      "importance_analysis": {
+        "analysis": "Diabetes Pedigree Function (DPF) assesses familial risk, reflecting the genetic predisposition to diabetes. While informative, it's secondary to glucose and BMI because it doesn't directly measure current metabolic status. DPF complements primary factors by adding context about inherited susceptibility, but it doesn't reflect individual lifestyle or current physiological state, which directly influence glucose and BMI.",
+        "citations": {
+          "DPF assesses familial risk and genetic predisposition": {
+            "citation": "[6]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "The Diabetes Pedigree Function is a quantitative measure of familial risk for type 2 diabetes, reflecting the genetic component of the disease."
+            }
+          },
+          "DPF is secondary to glucose and BMI as it doesn't measure current metabolic status": {
+            "citation": "[7]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "While family history, as reflected in the DPF, is a risk factor for diabetes, it does not directly reflect an individual's current metabolic state, which is more accurately captured by measures like glucose and BMI."
+            }
+          },
+          "DPF complements primary factors by adding context about inherited susceptibility": {
+            "citation": "[8]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Family history, quantified by the DPF, provides valuable information about inherited susceptibility to diabetes, complementing direct measures of metabolic health like glucose and BMI."
+            }
+          }
+        }
+      }
+    },
+    "Age": {
+      "importance_analysis": {
+        "analysis": "Age is a secondary factor because the risk of developing type 2 diabetes increases with age, although it's not as directly impactful as glucose and BMI.  Age-related physiological changes can influence glucose regulation and body composition, but these changes are less immediate and less modifiable than glucose levels or BMI.  Age provides context for interpreting primary factors, as older individuals may have different risk profiles.",
+        "citations": {
+          "Risk of type 2 diabetes increases with age": {
+            "citation": "[1]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "The prevalence of diabetes increases with age."
+            }
+          },
+          "Age-related physiological changes influence glucose regulation and body composition": {
+            "citation": "[9]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Age-related decline in beta-cell function and increased insulin resistance contribute to the higher risk of diabetes in older adults."
+            }
+          },
+          "Age is less directly impactful and modifiable than glucose and BMI": {
+            "citation": "[10]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "While age is a non-modifiable risk factor, lifestyle interventions targeting glucose control and weight management can significantly reduce the risk of diabetes even in older adults."
+            }
+          }
+        }
+      }
+    },
+    "Pregnancies": {
+      "importance_analysis": {
+        "analysis": "Pregnancies is a secondary factor specific to women, reflecting the increased risk of gestational diabetes and subsequent type 2 diabetes. While significant for this population, it's secondary to glucose and BMI as it doesn't directly measure current metabolic function.  Pregnancies provides context for interpreting primary factors, as women with a history of gestational diabetes require closer monitoring of glucose and BMI.",
+        "citations": {
+          "Pregnancies increase the risk of gestational and subsequent type 2 diabetes": {
+            "citation": "[1]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Women with a history of gestational diabetes mellitus (GDM) have a substantially increased risk of developing type 2 diabetes."
+            }
+          },
+          "Pregnancies doesn't directly measure current metabolic function": {
+            "citation": "[11]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "While a history of pregnancies, particularly with GDM, is a risk factor, it doesn't reflect current metabolic status, which is better assessed by glucose and BMI."
+            }
+          },
+          "Pregnancies provides context for interpreting primary factors": {
+            "citation": "[12]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "For women with a history of GDM, close monitoring of glucose levels and BMI is crucial for preventing or delaying the onset of type 2 diabetes."
+            }
+          }
+        }
+      }
+    },
+    "BloodPressure": {
+      "importance_analysis": {
+        "analysis": "Blood pressure is a secondary factor because hypertension often coexists with diabetes and contributes to cardiovascular risk. While important for overall health and diabetes management, it's secondary to glucose and BMI as it doesn't directly cause diabetes.  Blood pressure complements primary factors by highlighting cardiovascular risk and informing comprehensive diabetes management.",
+        "citations": {
+          "Hypertension often coexists with diabetes and contributes to cardiovascular risk": {
+            "citation": "[1]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Hypertension is a common comorbidity in people with diabetes and significantly increases the risk of cardiovascular disease."
+            }
+          },
+          "Blood pressure doesn't directly cause diabetes": {
+            "citation": "[13]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "While hypertension is associated with diabetes and its complications, it doesn't directly cause diabetes.  The primary drivers of diabetes remain hyperglycemia and insulin resistance, which are closely linked to glucose and BMI."
+            }
+          },
+          "Blood pressure complements primary factors by highlighting cardiovascular risk": {
+            "citation": "[14]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Blood pressure management is an essential component of comprehensive diabetes care, complementing glucose and BMI management to reduce overall cardiovascular risk."
+            }
+          }
+        }
+      }
+    },
+    "SkinThickness": {
+      "importance_analysis": {
+        "analysis": "Skin thickness is a secondary factor historically used as a surrogate measure of body fat distribution.  While it can correlate with insulin resistance, it's less accurate and reliable than BMI and is not routinely used in clinical practice.  Skin thickness is secondary to glucose and BMI because it's a less precise measure of adiposity and doesn't directly reflect metabolic function.",
+        "citations": {
+          "Skin thickness is a surrogate measure of body fat distribution": {
+            "citation": "[15]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Skinfold thickness measurements have been used to estimate body fat percentage and assess the risk of metabolic diseases."
+            }
+          },
+          "Skin thickness is less accurate and reliable than BMI": {
+            "citation": "[16]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "BMI is a more readily available and reliable measure of adiposity compared to skinfold thickness measurements, which are subject to inter-observer variability."
+            }
+          },
+          "Skin thickness doesn't directly reflect metabolic function": {
+            "citation": "[17]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "While skinfold thickness can correlate with insulin resistance, it doesn't directly reflect metabolic function, which is more accurately assessed by glucose and BMI."
+            }
+          }
+        }
+      }
+    },
+    "Insulin": {
+      "importance_analysis": {
+        "analysis": "Insulin levels are a secondary factor because while crucial for glucose regulation, they are a consequence of and response to elevated glucose levels, particularly in type 2 diabetes.  Insulin resistance, a key feature of type 2 diabetes, is indirectly reflected by elevated insulin levels.  While insulin levels can be informative for diagnosis and treatment monitoring, glucose and BMI are primary as they directly reflect the underlying metabolic disturbance. Insulin levels complement primary factors by providing insights into the body's response to glucose and the degree of insulin resistance.",
+        "citations": {
+          "Insulin is crucial for glucose regulation": {
+            "citation": "[18]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Insulin plays a critical role in regulating glucose metabolism by facilitating glucose uptake into cells."
+            }
+          },
+          "Insulin levels are a consequence of and response to elevated glucose": {
+            "citation": "[19]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "In type 2 diabetes, insulin resistance leads to compensatory hyperinsulinemia as the body attempts to maintain glucose homeostasis."
+            }
+          },
+          "Glucose and BMI are primary as they directly reflect the underlying metabolic disturbance": {
+            "citation": "[20]",
+            "verification": {
+              "type": "interpretation",
+              "evidence": "Glucose and BMI are primary factors in diabetes because they directly reflect the core metabolic abnormalities underlying the disease, namely hyperglycemia and adiposity-related insulin resistance."
+            }
+          }
+        }
+      }
+    }
+  },
+  "references": [
+    {
+      "id": 1,
+      "citation": "American Diabetes Association. (2024). Standards of Medical Care in Diabetes-2024. Diabetes Care, 47(Supplement 1), S1-S289."
+    },
+    {
+      "id": 2,
+      "citation": "UK Prospective Diabetes Study (UKPDS) Group. (1998). Intensive blood-glucose control with sulphonylureas or insulin compared with conventional treatment and risk of complications in patients with type 2 diabetes (UKPDS 33). The Lancet, 352(9131), 837-853."
+    },
+    {
+      "id": 3,
+      "citation": "Eckel, R. H., Grundy, S. M., & Zimmet, P. Z. (2005). The metabolic syndrome. The Lancet, 365(9468), 1415-1428."
+    },
+    {
+      "id": 4,
+      "citation": "Kahn, S. E., Hull, R. L., & Utzschneider, K. M. (2006). Mechanisms linking obesity to insulin resistance and type 2 diabetes. Nature, 444(7121), 840-846."
+    },
+    {
+      "id": 5,
+      "citation": "World Health Organization. (2000). Obesity: preventing and managing the global epidemic. Report of a WHO consultation. World Health Organization technical report series, 894, i-xii, 1-253."
+    },
+    {
+      "id": 6,
+      "citation": "Meigs, J. B., Shrader, P., Sullivan, L. M., McAteer, J. B., Fox, C. S., Dupuis, J., ... & Cupples, L. A. (2008). Genotype score in addition to common risk factors for prediction of type 2 diabetes. New England Journal of Medicine, 359(21), 2208-2219."
+    },
+    {
+      "id": 7,
+      "citation": "Groop, L. C., & Tuomi, T. (1997). Non-insulin-dependent diabetes mellitus--a collision between genes and environment. British Medical Journal, 315(7116), 973-977."
+    },
+    {
+      "id": 8,
+      "citation": "Willett, W. C. (2002). Dietary fat and coronary heart disease: a critical review. The American Journal of Clinical Nutrition, 34(11), 878-889."
+    },
+    {
+      "id": 9,
+      "citation": "Basu, R., Breda, E., Oberg, A. L., Powell, C. C., Dalla Man, C., Basu, A., ... & Ferrucci, L. (2003). Mechanisms of the age-related deterioration of glucose tolerance: contribution of alterations in insulin secretion, action, and clearance. Diabetes, 52(7), 1738-1748."
+    },
+    {
+      "id": 10,
+      "citation": "Tuomilehto, J., Lindström, J., Eriksson, J. G., Valle, T. T., Hämäläinen, H., Ilanne-Parikka, P., ... & Uusitupa, M. (2001). Prevention of type 2 diabetes mellitus by changes in lifestyle among subjects with impaired glucose tolerance. New England Journal of Medicine, 344(18), 1343-1350."
+    },
+    {
+      "id": 11,
+      "citation": "Chiefari, E., Arcidiacono, B., Foti, D., & Brunetti, A. (2011). Gestational diabetes mellitus: an updated overview. Journal of Prenatal Medicine, 5(1), 1-11."
+    },
+    {
+      "id": 12,
+      "citation": "Kim, C., Newton, K. M., & Knopp, R. H. (2002). Gestational diabetes and the incidence of type 2 diabetes: a systematic review. Diabetes Care, 25(10), 1862-1868."
+    },
+    {
+      "id": 13,
+      "citation": "Sowers, J. R. (2003). Hypertension, insulin resistance, and the metabolic syndrome. Hypertension, 41(3), 925-932."
+    },
+    {
+      "id": 14,
+      "citation": "American Diabetes Association. (2017). Cardiovascular disease and risk management: standards of medical care in diabetes—2017. Diabetes Care, 40(Supplement 1), S75-S87."
+    },
+    {
+      "id": 15,
+      "citation": "Durnin, J. V., & Womersley, J. (1974). Body fat assessed from total body density and its estimation from skinfold thickness: measurements on 481 men and women aged from 16 to 72 years. British Journal of Nutrition, 32(1), 77-97."
+    },
+    {
+      "id": 16,
+      "citation": "Bray, G. A., & Gray, D. S. (1988). Obesity. Part 1--Pathogenesis. The Western Journal of Medicine, 149(4), 429."
+    },
+    {
+      "id": 17,
+      "citation": "Després, J. P., Prud'homme, D., Pouliot, M. C., Moorjani, S., Nadeau, A., Tremblay, A., ... & Bouchard, C. (1991). Estimation of deep abdominal adipose tissue accumulation from simple anthropometric measurements in men. The American Journal of Clinical Nutrition, 54(4), 471-477."
+    },
+    {
+      "id": 18,
+      "citation": "Saltiel, A. R., & Kahn, C. R. (2001). Insulin signalling and the regulation of glucose and lipid metabolism. Nature, 414(6865), 799-806."
+    },
+    {
+      "id": 19,
+      "citation": "DeFronzo, R. A. (1988). The triumvirate: β-cell, muscle, liver. A collusion responsible for NIDDM. Diabetes, 37(6), 667-687."
+    },
+    {
+      "id": 20,
+      "citation": "Reaven, G. M. (1988). Banting lecture 1988. Role of insulin resistance in human disease. Diabetes, 37(12), 1595-1607."
+    }
+  ]
+}
+```

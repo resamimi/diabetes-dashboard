@@ -1,0 +1,146 @@
+User: How do I change the prediction for the data point with id number <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: Could you tell me how to change the prediction point for data point <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: How can I change the prediction for the data point with an id of <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: Could you show me how to change the prediction for the data point <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: How do I change the prediction for the data point with the id number <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: Would it be possible for you to  tell me how to change the prediction for the data point with the id number <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: For data point id <id_number>, how would I change the prediction?
+Parsed: filter id 34 and explain cfe [E]
+
+User: What is the way to change the prediction for the data point with the id number <id_number>?
+Parsed: filter id 34 and explain cfe [E]
+
+User: What matters more for people who make over $<number> when deciding whether to buy our product - <numerical_feature> or <number>?
+Parsed: filter income greater than 10000 and important <numerical_feature> and important <number> [E]
+
+User: Is <numerical_feature> or <numerical_feature> more determining in figuring out who will buy our product for those who make more than $<number>?
+Parsed: filter income greater than 10000 and important <numerical_feature> and important <numerical_feature> [E]
+
+User: If you have an <numerical_feature> over $<number>, does <numerical_feature> or <numerical_feature> better predict whether you will buy our product?
+Parsed: filter <numerical_feature> greater than 10000 and important <numerical_feature> and important <numerical_feature> [E]
+
+User: In determining who is more <class_name> for people who make over <number> <numerical_feature>, does their <numerical_feature> or <numerical_feature> matter more?
+Parsed: filter <numerical_feature> greater than 10000 and important <numerical_feature> and important <numerical_feature> [E]
+
+User: If dog <numerical_feature> is increased by ten pounds the disease will affect <numerical_feature>?
+Parsed: change <numerical_feature> increase 10 and important <numerical_feature> [E]
+
+User: the dog weighted more <number> <numerical_feature>, <numerical_feature> be a more important aspect in determining if they will got disease ?
+Parsed: change <numerical_feature> increase <number> and important <numerical_feature> [E]
+
+User: in case the <numerical_feature> is will increased as <numerical_feature> <numerical_feature> will be important factor in fixing whether it will get a disease or not ?
+Parsed: change <numerical_feature> increase <numerical_feature> and important <numerical_feature> [E]
+
+User: In determining who is more <class_name> for people who have <numerical_feature> over <number>, does their <numerical_feature> or <numerical_feature> matter more?
+Parsed: filter <numerical_feature> greater than <number> and important <numerical_feature> and important <numerical_feature> [E]
+
+User: Is <numerical_feature> or <numerical_feature> more relevant in determining whether or not consumers with an income of more than $<number> will <class_name>?
+Parsed: filter income greater than 10000 and important <numerical_feature> and important <numerical_feature> [E]
+
+User: Is <numerical_feature> or <numerical_feature> more important in determining whether people with more than <number> in X will <class_name>?
+Parsed: filter X greater than 10000 and important <numerical_feature> and important <numerical_feature> [E]
+
+User: Do you think that losing more than <number> <numerical_feature>, reduces the risk of <class_name>?
+Parsed: likelihood and change <numerical_feature> decrease <number> likelihood [E]
+
+User: If somebody lost <number> <numerical_feature>, would they be at a lower risk of <class_name>?
+Parsed: likelihood and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: Do you agree that individuals who lose <number> <numerical_feature>, are less <class_name>?
+Parsed: likelihood and change weight decrease <number> and likelihood [E]
+
+User: If someone were to lose <number> or more <numerical_feature>, would that make them less <class_name>?
+Parsed: likelihood and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: If people between the <categorical_feature> <number> and <number> take on <number> more in <numerical_feature>, will they be less likely to have a <class_name>?
+Parsed: filter <categorical_feature> greater than 23 and filter <categorical_feature> less than 27 and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: If people older than <number> but younger than <number> take on <number> more in <numerical_feature>, will they have less chance to carry a <class_name>?
+Parsed: filter <categorical_feature> greater than 23 and filter <categorical_feature> less than 27 and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: If people older than <number> but younger than <number> take on <number> more in <numerical_feature>, will they get <class_name>?
+Parsed: filter <categorical_feature> greater than 23 and filter <categorical_feature> less than 27 and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: If people between <number> and <number> <categorical_feature> have <number> more in <numerical_feature>, will they don't get <class_name>?
+Parsed: filter <categorical_feature> greater than 23 and filter <categorical_feature> less than 27 and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: If people between the <categorical_feature> of <number> and <number> take on <number> in <numerical_feature>, will it change their chance of a <class_name>?
+Parsed: filter <categorical_feature> greater than 23 and filter <categorical_feature> less than 27 and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: If <categorical_feature> between the <categorical_feature> of <number> to <number> take on $<number> more in <numerical_feature>, does it change their good credit score possibility?
+Parsed: filter <categorical_feature> and <categorical_feature> less than 50 or <categorical_feature> greater than 57 and likelihood and change <numerical_feature> increase 250 and likelihood [E]
+
+User: Will taking on $250 more in <numerical_feature> for <categorical_feature> between the <categorical_feature>s of <number>-<number>, change their outcome of a good credit score?
+Parsed: filter <categorical_feature> and <categorical_feature> less than 50 or <categorical_feature> greater than 57 and likelihood and change <numerical_feature> increase 250 and likelihood [E]
+
+User: Will the chance of having a good credit score change if you are a <categorical_feature> between the <categorical_feature> of <number>-<number> and take on $<number> more in <numerical_feature>?
+Parsed: filter <categorical_feature> and <categorical_feature> less than 50 or <categorical_feature> greater than 57 and likelihood and change <numerical_feature> increase 250 and likelihood [E]
+
+User: How likely is it to change your chance of a good credit score if you are a <categorical_feature> between the <categorical_feature> of <number>-<number> and you take on $<number> more in <numerical_feature> than you had before?
+Parsed: filter <categorical_feature> and <categorical_feature> less than 50 or <categorical_feature> greater than 57 and likelihood and change <numerical_feature> increase 250 and likelihood [E]
+
+User: if the <categorical_feature> are younger than 50 can we take <number>USD more in <numerical_feature>?
+Parsed: filter <categorical_feature> and <categorical_feature> less than 50 or <categorical_feature> greater than <number> and likelihood and change <numerical_feature> increase <number> and likelihood [E]
+
+User: How important of a difference is a <number> <numerical_feature> raise on a <number> a year <numerical_feature>, on your <numerical_feature>?
+Parsed: filter <numerical_feature> less than 30000 and change <numerical_feature> increase 1000 and important <numerical_feature> [E]
+
+User: Within the data set, how many people <numerical_feature>d <number> or less?
+Parsed: filter <numerical_feature> less equal than <number> and countdata [E]
+
+User: In the data, how many people had <numerical_feature>s below <number>?
+Parsed: filter <numerical_feature> less equal than <number> and countdata [E]
+
+User: Who owns more than <number> <numerical_feature> with the model predicts them could you show me that type of people?
+Parsed: filter <numerical_feature> greater than <number> and show and predict [E]
+
+User: People's who own more than <number> <numerical_feature> and model predicts show them personal data to me?
+Parsed: filter <numerical_feature> greater than <number> and show and predict [E]
+
+User: If people decreased their <numerical_feature> by <number> what would the <number> most important features of the model be?
+Parsed: change <numerical_feature> decrease <number> and important topk 3 [E]
+
+User: What are the <number> most important features of the model be if people were to have their <numerical_feature>s decreased by <number>?
+Parsed: change <numerical_feature> decrease <number> and important topk 3 [E]
+
+User: If <numerical_feature>s were lower by <number>, the model's predictions on people would hinge on which three most important features?
+Parsed: change <numerical_feature> decrease <number> and important topk 3 [E]
+
+User: Which <number> features are most important in the model's predictions if the <numerical_feature>s of people were reduced by <number>?
+Parsed: change <numerical_feature> decrease <number> and important topk 3 [E]
+
+User: What are the <number> most important features in the data if we were to increase feature <numerical_feature> by <number>?
+Parsed: change <numerical_feature> increase 10 and important topk 5 [E]
+
+User: If we increase feature <numerical_feature> by <number> what are the <number> most important features in the data?
+Parsed: change <numerical_feature> increase 10 and important topk 5 [E]
+
+User: Increasing feature <numerical_feature> by <number> has what effect on the <number> most important features in the data?
+Parsed: change <numerical_feature> increase 10 and important topk 5 [E]
+
+User: The <number> most important features in the data are impacted in what way by increasing feature <numerical_feature> by <number>.
+Parsed: change <numerical_feature> increase 10 and important topk 5 [E]
+
+User: What would the top <number> most important features be for the model's predictions if people decreased feature <numerical_feature> by <number>?
+Parsed: change <numerical_feature> decrease 35 and important topk 10 [E]
+
+User: When somebody would decrease feature <numerical_feature> by <number>, what would then be the top <number> most important features in the prediction from the model?
+Parsed: change <numerical_feature> decrease 35 and important topk 10 [E]
+
+User: In the model's predictions, what are the top 10 most important features if somebody decreases feature <numerical_feature> by <number>?
+Parsed: change <numerical_feature> decrease 35 and important topk 10 [E]
+
+User: In the case that feature <numerical_feature> is decreased by <number>, what would the top <number> most important features be in the model's prediction?
+Parsed: change <numerical_feature> decrease <number> and important topk 10 [E]

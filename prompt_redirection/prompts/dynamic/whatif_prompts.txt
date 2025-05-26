@@ -1,0 +1,167 @@
+User: Show me the predictions of all the <categorical_feature> if you increased <numerical_feature> by <number>
+Parsed: filter <categorical_feature> true and change <numerical_feature> increase 10 and predict [E]
+
+User: Tell me what the model would predict if you decreased <numerical_feature> by <number> on all the data
+Parsed: change <numerical_feature> decrease 5 and predict [E]
+
+User: Over all the instances in the data, what would the predictions be if <categorical_feature> were set to false?
+Parsed: change <categorical_feature> false and predict [E]
+
+User: For all the data, what would the predictions be if <categorical_feature> were set to true?
+Parsed: change <categorical_feature> true and predict [E]
+
+User: For the entire dataset, what would the predictions be if you decreased <numerical_feature> by <number>?
+Parsed: change <numerical_feature> decrease <number> and predict [E]
+
+User: What would the predictions be if you set <numerical_feature> to <number> on the entire dataset?
+Parsed: change <numerical_feature> set <number> and predict [E]
+
+User: What would the explanations be if you set <numerical_feature> to <number> on the entire dataset?
+Parsed: change <numerical_feature> set <number> and explain features [E]
+
+User: Could you show me the predictions for instances where <categorical_feature> equal to <categorical_value> with <numerical_feature> set to <number>?
+Parsed: filter <categorical_feature> <categorical_value> and change <numerical_feature> set 215 and predict [E]
+
+User: If you set <categorical_feature> to <categorical_value>, what would the model's rationale be on all the data?
+Parsed: change <categorical_feature> <categorical_value> and explain features [E]
+
+User: What would you predict if <numerical_feature> were set to 11 and <numerical_feature> were increased by <number> for the entire dataset?
+Parsed: change <numerical_feature> set 11 and change <numerical_feature> increase 1566 and predict [E]
+
+User: What would the prediction for id <id_number> be if you change <categorical_feature> to <categorical_value>?
+Parsed: filter id 1552 and change <categorical_feature> <categorical_value> and predict [E]
+
+User: What would the prediction for sample id <id_number> be if you change <categorical_feature> to <categorical_value>?
+Parsed: filter id 1552 and change <categorical_feature> <categorical_value> and predict [E]
+
+User: How would you predict instance <id_number> if you decreased <numerical_feature> by <number> and increased <numerical_feature> by -<number>?
+Parsed: filter id 111 and change <numerical_feature> decrease 100 and change <numerical_feature> increase -15 and predict [E]
+
+User: If you increased <numerical_feature> by <number>, what would the model's rationale be?
+Parsed: change <numerical_feature> increase <number> and explain features [E]
+
+User: What is the models predictions on <numerical_feature> greater than <number> and what would it be if you decreased <numerical_feature> by <number>?
+Parsed: filter <numerical_feature> greater than <number> and predict and change <numerical_feature> decrease <number> and predict [E]
+
+User: What is the importance of <categorical_feature> if <numerical_feature> were set to <number>?
+Parsed: change <numerical_feature> set 6299 and important <categorical_feature> [E]
+
+User: What would the prediction be if you set <numerical_feature> to <number> for instance id <id_number>?
+Parsed: filter id 115 and change <numerical_feature> set <number> and predict [E]
+
+User: What would the explanation be if you set <numerical_feature> to <number> for instance id <id_number>?
+Parsed: filter id 15255 and change <numerical_feature> set <number> and explain features [E]
+
+User: How would the predictions change for all the instances in the data if you increased <numerical_feature> by <number>, decreased <numerical_feature> by <number>, and set <categorical_feature> to <categorical_value>?
+Parsed: change <numerical_feature> increase 15 and change <numerical_feature> decrease 10 and change <categorical_feature> <categorical_value> and predict [E]
+
+User: What would the prediction for id <id_number> be if you change <numerical_feature> to <number>?
+Parsed: filter id 55 and change <numerical_feature> set <number> and predict [E]
+
+User: What would happen to the predictions for instances with <numerical_feature> less than <number> if you were to change <numerical_feature> to <number>?
+Parsed: filter <numerical_feature> less than <number> and change <numerical_feature> set <number> and predict [E]
+
+User: What would the predictions be like for instances with <numerical_feature> less than <number> if you were to increase <numerical_feature> by <number>?
+Parsed: filter <numerical_feature> less than <number> and change <numerical_feature> increase <number> and predict [E]
+
+User: what's the likelihood this instance is <class_name> if we increase <numerical_feature> by <number>?
+Parsed: previousfilter and change <numerical_feature> increase <number> and likelihood [E]
+
+User: probability this data point is predicted as <class_name> if we increase <numerical_feature> by <number>
+Parsed: previousfilter and change <numerical_feature> increase <number> and likelihood [E]
+
+User: what's the probability of id <id_number> getting predicted <class_name> if we were to decrease <numerical_feature> by <number>
+Parsed: filter id 11 and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: how likely would the "<class_name>" class be if <numerical_feature> were set to <number> for id <id_number>
+Parsed: filter id 515 and change <numerical_feature> set <number> and likelihood [E]
+
+User: how would the predictions change if X were decreased by 10 for people with a <numerical_feature> of <number>?
+Parsed: filter <numerical_feature> equal to <number> and change X decrease 10 and predict [E]
+
+User: what are the predictions for those with <numerical_feature> of <number>?
+Parsed: filter <numerical_feature> equal to <number> and predict [E]
+
+User: in what was would the predictions be altered if it were the case that those with <numerical_feature> of <number> had <numerical_feature> decreased by <number>?
+Parsed: filter <numerical_feature> equal to <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: what would happen to the class probabilities if we increased <numerical_feature> by <number>?
+Parsed: previousfilter and change <numerical_feature> increase <number> and likelihood [E]
+
+User: What if we took <number> points away from <numerical_feature> for id <id_number>? What would happen to the probability of the predictions?
+Parsed: filter id 235135 and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: How would the prediction probabilites change if we decrease <numerical_feature> by <number>?
+Parsed: previousfilter and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: What happens to the prediction likelihoods if we add <number> to <numerical_feature>?
+Parsed: previousfilter and change <numerical_feature> increase <number> and likelihood [E]
+
+User: for data point <id_number>, how would the class probabilities change if we took <number> away from <numerical_feature>?
+Parsed: filter id 515 and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: what if, for instance <id_number>, we added <number> to <numerical_feature> and viewed the class probabilities?
+Parsed: filter id 1515 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: please tell me what would happen for the instance with id <id_number> if we added <number> to the <numerical_feature> feature and viewed the probability of the <class_name> class
+Parsed: filter id 10 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: what's the likelihood of id <id_number> being <class_name> if we add <number> to <numerical_feature>?
+Parsed: filter id 32 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: probability of id <id_number> getting predicted <class_name> adding <number> to <numerical_feature>
+Parsed: filter id 34 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: for those with <number> or more <numerical_feature>, what would happen to the model's predictions if <numerical_feature> were decreased by <number>?
+Parsed: filter <numerical_feature> greater equal than <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: for those with <number> or more <numerical_feature>, what would happen to the distribution of model predictions if <numerical_feature> were increased by <number>?
+Parsed: filter <numerical_feature> greater equal than <number> and change <numerical_feature> increase <number> and predict [E]
+
+User: what would happen to the distribution of model predictions if people with <numerical_feature> less than <number> had <numerical_feature> decreased by <number>
+Parsed: filter <numerical_feature> less than <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: what would happen to the distribution of model predictions if individuals with <numerical_feature> greater than <number> had <numerical_feature> decreased by <number>
+Parsed: filter <numerical_feature> greater than <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: what would happen to the likelihood of <class_name> if we were to increase <numerical_feature> by <number> for the data point with sample id <id_number>
+Parsed: filter id 100 and change <numerical_feature> increase 70 and likelihood [E]
+
+User: whats the probability that sample id <id_number> has diabetes
+Parsed: filter id 22 and likelihood [E]
+
+User: what is the probability for <id_number> if <numerical_feature> is increased by <number>
+Parsed: filter id 3312 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: what is the prediction probability for <id_number> if its <numerical_feature> is increased by <number>
+Parsed: filter id 93 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: what is the probability for instance with id <id_number> if <numerical_feature> is increased by <number>
+Parsed: filter id 34 and change <numerical_feature> increase <number> and likelihood [E]
+
+User: what is the probability for instance with id <id_number> if <numerical_feature> is decreased by <number>
+Parsed: filter id 34 and change <numerical_feature> decrease <number> and likelihood [E]
+
+User: what are the predictions of people more than <number> <numerical_feature> if they had <number> fewer <numerical_feature>
+Parsed: filter <numerical_feature> greater than <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: reduce the number of occurances for everyone with more than <number> <numerical_feature> by <number>, and show the predictions
+Parsed: filter <numerical_feature> greater than <number> and change occurances decrease 10 and predict [E]
+
+User: take all the instances with more than <number> <numerical_feature>, reduce their <numerical_feature> by <number>, and tell me the predictions
+Parsed: filter <numerical_feature> greater than <number> and change <numerical_feature> decrease <number> and predict [E]
+
+User: if id <id_number> had a <numerical_feature> of <number> would they be predicted <class_name>?
+Parsed: filter id 120 and change <numerical_feature> set <number> and predict [E]
+
+User: if it were the case that sample <id_number> had a <numerical_feature> of <number> what would the class probabilities be?
+Parsed: filter id 523 and change <numerical_feature> set <number> and likelihood [E]
+
+User: if <id_number> were to have <numerical_feature> of <number> would this person be <class_name>?
+Parsed: filter id 78 and change <numerical_feature> set <number> and likelihood [E]
+
+User: if <numerical_feature> is increased by <number> for <filer_text>, what would the model predict?
+Parsed: <filter_parse> and change <numerical_feature> increase <number> and predict [E]
+
+User: if <numerical_feature> is decreased by <number> for <filer_text>, what would the model predict?
+Parsed: <filter_parse> and change <numerical_feature> increase <number> and predict [E]

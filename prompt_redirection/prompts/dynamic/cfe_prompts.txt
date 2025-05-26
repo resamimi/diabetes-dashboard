@@ -1,0 +1,32 @@
+User: What does instance with id 22 need to do to change the prediction?
+Parsed: filter id 22 and explain cfe [E]
+
+User: show me cfe's for the instance with id 22
+Parsed: filter id 22 and explain cfe [E]
+
+User: What does instance with id <id_number> have to do in order to change the prediction?
+Parsed: filter id 54 and explain cfe [E]
+
+User: Could you please tell me the predictions for id <id_number> and what you have to do to flip the prediction?
+Parsed: filter id 54 and predict and explain cfe [E]
+
+User: What are the reasons why <id_number> is predicted and what you have to do to flip the prediction?
+Parsed: filter id 54 and explain features and explain cfe [E]
+
+User: Hmm... I was wondering what it would take to flip the prediction of instance with id <id_number>?
+Parsed: filter id 9810 and explain cfe [E]
+
+User: Nice. I'm pretty satisfied with the prediction of id <id_number>. But could you tell me how to change the prediction?
+Parsed: filter id 221 and explain cfe [E]
+
+User: What would it take to change how instance <id_number> is predicted?
+Parsed: filter id 98387 and explain cfe [E]
+
+User: How would you flip the prediction for id <id_number>?
+Parsed: filter id 23 and explain cfe [E]
+
+User: flip the classification for sample <id_number>?
+Parsed: filter id 98 and explain cfe [E]
+
+User: flip prediction class data point <id_number>
+Parsed: filter id 2325 and explain cfe [E]

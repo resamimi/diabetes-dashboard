@@ -1,0 +1,5 @@
+116ac2e deleting unnecessary files
+b8b7581 Add .gitignore for Python cache files
+2ef572c Merge branch 'main' of github.com:resamimi/diabetes-dashboard
+63f0fd5 Initial commit
+09a5b28 Initial commit
